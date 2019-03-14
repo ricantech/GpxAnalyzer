@@ -1,7 +1,6 @@
 HELP.md
 .gradle
 /build/
-!gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
 .apt_generated
@@ -25,7 +24,7 @@ HELP.md
 /dist/
 /nbdist/
 /.nb-gradle/
-
+.
 # Compiled class file
 *.class
 

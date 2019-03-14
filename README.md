@@ -1,5 +1,5 @@
 # GpxAnalyzer
-Application loads the file, store information and calculate total distance, start waypoint - end waypoint distance, average speed and get close places through HereAPI (see bellow for more information).
+Application loads the file, store information and calculate (jenetics library) total distance, start waypoint - end waypoint distance, average speed and get close places (HereAPI)
 
 ### Defaults
 **port: 8081**
@@ -18,6 +18,9 @@ Accessible here once up-and-running: ```{url.of.running.service}/swagger-ui.html
 **hereapi.id**: ID of HereAPI user.
 
 **hereapi.code**: Code of HereAPI user.
+
+### Calculations
+All geodetic calculations are done through **jenetics** library. Library can be found here: https://github.com/jenetics/jpx
 
 ### External APIs
 To obtain information about close places HereAPI is used. 

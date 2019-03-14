@@ -10,7 +10,7 @@ Use gradle wrapper: ```./gradlew bootRun```
 IDE spring boot run configuration: ```GpxAnalyzerApplication.class```
 
 ### Swagger documentation
-Accessible here once up-and-running: ```{url.of.running.service}/swagger-ui.html```
+Accessible here once up-and-running: ```{url.of.running.service}/swagger-ui.html``` by default http://localhost:8081/swagger-ui.html
 
 ### Configuration
 **hereapi.url**: URL of HereAPI REST service.

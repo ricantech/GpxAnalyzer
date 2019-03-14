@@ -1,0 +1,480 @@
+{
+  "results" : {
+    "next" : "https://places.cit.api.here.com/places/v1/discover/here;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZvZmZzZXQ9MjAmc2l6ZT0yMA?at=37.79429%2C-122.40698&app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+    "items" : [ {
+      "position" : [ 37.79429, -122.40698 ],
+      "distance" : 0,
+      "title" : "Tung Fong Herbs",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "hospital-health-care-facility",
+        "title" : "Hospital or Healthcare Facility",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/hospital-health-care-facility?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/26.icon",
+      "vicinity" : "101 Waverly Pl<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8408lxx5-a1107952bb1704de116622a1f9aabe75;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTA?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8408lxx5-a1107952bb1704de116622a1f9aabe75",
+      "openingHours" : {
+        "text" : "Mon-Sat: 09:30 - 17:30",
+        "label" : "Opening hours",
+        "isOpen" : false,
+        "structured" : [ {
+          "start" : "T093000",
+          "duration" : "PT08H00M",
+          "recurrence" : "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR,SA"
+        } ]
+      }
+    }, {
+      "position" : [ 37.79429, -122.40698 ],
+      "distance" : 0,
+      "title" : "Igreen Massage Therapy",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "hospital-health-care-facility",
+        "title" : "Hospital or Healthcare Facility",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/hospital-health-care-facility?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/26.icon",
+      "vicinity" : "818 Clay St<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8408lxx5-aad4bdcb57270bc6c3772ec5fcfdb999;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTE?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8408lxx5-aad4bdcb57270bc6c3772ec5fcfdb999",
+      "openingHours" : {
+        "text" : "Mon-Fri: 11:00 - 17:00<br/>Sat: 10:00 - 17:00<br/>Sun: 10:00 - 16:00",
+        "label" : "Opening hours",
+        "isOpen" : false,
+        "structured" : [ {
+          "start" : "T110000",
+          "duration" : "PT06H00M",
+          "recurrence" : "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR"
+        }, {
+          "start" : "T100000",
+          "duration" : "PT07H00M",
+          "recurrence" : "FREQ:DAILY;BYDAY:SA"
+        }, {
+          "start" : "T100000",
+          "duration" : "PT06H00M",
+          "recurrence" : "FREQ:DAILY;BYDAY:SU"
+        } ]
+      }
+    }, {
+      "position" : [ 37.79429, -122.40698 ],
+      "distance" : 0,
+      "title" : "Cool Tea Bar",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "coffee-tea",
+        "title" : "Coffee/Tea",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/coffee-tea?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/23.icon",
+      "vicinity" : "103 Waverly Pl<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8408lxx5-b1c93e53f844081e0bee3e37963c012e;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTI?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8408lxx5-b1c93e53f844081e0bee3e37963c012e",
+      "openingHours" : {
+        "text" : "Mon-Thu, Sun: 12:00 - 23:00<br/>Fri, Sat: 11:00 - 00:00",
+        "label" : "Opening hours",
+        "isOpen" : false,
+        "structured" : [ {
+          "start" : "T120000",
+          "duration" : "PT11H00M",
+          "recurrence" : "FREQ:DAILY;BYDAY:MO,TU,WE,TH,SU"
+        }, {
+          "start" : "T110000",
+          "duration" : "PT13H00M",
+          "recurrence" : "FREQ:DAILY;BYDAY:FR,SA"
+        } ]
+      }
+    }, {
+      "position" : [ 37.79429, -122.40698 ],
+      "distance" : 0,
+      "title" : "Dung Fong Trading Company",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "shop",
+        "title" : "Shop",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/shop?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/09.icon",
+      "vicinity" : "101 Waverly Pl<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8yy-3cbbca0ce5754b1fb6d808d8fa24d8f2;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTM?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8yy-3cbbca0ce5754b1fb6d808d8fa24d8f2"
+    }, {
+      "position" : [ 37.79429, -122.40698 ],
+      "distance" : 0,
+      "title" : "Jack Therapeutic Massage",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "hospital-health-care-facility",
+        "title" : "Hospital or Healthcare Facility",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/hospital-health-care-facility?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/26.icon",
+      "vicinity" : "818 Clay St<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-19cc161a4ee74073aa371bb41d485e7a;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTQ?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-19cc161a4ee74073aa371bb41d485e7a",
+      "openingHours" : {
+        "text" : "Mon-Fri: 10:30 - 17:00",
+        "label" : "Opening hours",
+        "isOpen" : false,
+        "structured" : [ {
+          "start" : "T103000",
+          "duration" : "PT06H30M",
+          "recurrence" : "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR"
+        } ]
+      }
+    }, {
+      "position" : [ 37.79429, -122.40698 ],
+      "distance" : 0,
+      "title" : "Helen Associates",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "business-services",
+        "title" : "Business & Services",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/business-services?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/02.icon",
+      "vicinity" : "818 Clay St<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-356940f53c7f429cb5a6b2f8d7a20c4d;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTU?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-356940f53c7f429cb5a6b2f8d7a20c4d"
+    }, {
+      "position" : [ 37.79429, -122.40698 ],
+      "distance" : 0,
+      "title" : "Tung Fung Trading",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "business-services",
+        "title" : "Business & Services",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/business-services?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/02.icon",
+      "vicinity" : "101 Waverly Pl<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-3cc7f54215184bfba144179cd5187c24;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTY?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-3cc7f54215184bfba144179cd5187c24"
+    }, {
+      "position" : [ 37.79429, -122.40698 ],
+      "distance" : 0,
+      "title" : "Ming's Travel",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "travel-agency",
+        "title" : "Travel Agency",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/travel-agency?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/02.icon",
+      "vicinity" : "818 Clay St<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-845cb9cf718b4009af3295a21a93a504;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTc?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-845cb9cf718b4009af3295a21a93a504"
+    }, {
+      "position" : [ 37.79429, -122.40698 ],
+      "distance" : 0,
+      "title" : "Brightway",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "business-services",
+        "title" : "Business & Services",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/business-services?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/02.icon",
+      "vicinity" : "818 Clay St<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-9d03ca0d8168483d81f2f1480788b064;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTg?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-9d03ca0d8168483d81f2f1480788b064"
+    }, {
+      "position" : [ 37.79429, -122.40698 ],
+      "distance" : 0,
+      "title" : "Cool Tea Bar",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "restaurant",
+        "title" : "Restaurant",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/restaurant?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/03.icon",
+      "vicinity" : "103 Waverly Pl<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-9f98f2e22bfd41448fba3ef758f23597;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTk?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-9f98f2e22bfd41448fba3ef758f23597"
+    }, {
+      "position" : [ 37.79429, -122.40698 ],
+      "distance" : 0,
+      "title" : "Gee Poy Kuo Association",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "business-services",
+        "title" : "Business & Services",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/business-services?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/02.icon",
+      "vicinity" : "105 Waverly Pl<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-b5508097aaf84828b271d5de62352a16;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTEw?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-b5508097aaf84828b271d5de62352a16"
+    }, {
+      "position" : [ 37.79428, -122.40711 ],
+      "distance" : 11,
+      "title" : "Ming & Jason Hair Studio",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "service",
+        "title" : "Service",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/service?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/02.icon",
+      "vicinity" : "824 Clay St<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-2d992c2ad0c0407888177c713bd668a1;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTEx?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-2d992c2ad0c0407888177c713bd668a1",
+      "openingHours" : {
+        "text" : "Mon-Sun: 09:00 - 19:00",
+        "label" : "Opening hours",
+        "isOpen" : false,
+        "structured" : [ {
+          "start" : "T090000",
+          "duration" : "PT10H00M",
+          "recurrence" : "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR,SA,SU"
+        } ]
+      },
+      "alternativeNames" : [ {
+        "name" : "Ming & Jason's",
+        "language" : "en"
+      }, {
+        "name" : "Ming Hair Studio",
+        "language" : "en"
+      }, {
+        "name" : "Ming's Hair Studio",
+        "language" : "en"
+      } ]
+    }, {
+      "position" : [ 37.79428, -122.40711 ],
+      "distance" : 11,
+      "title" : "Thorn Ewing Sharpe & Christian Law Offices",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "business-services",
+        "title" : "Business & Services",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/business-services?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/02.icon",
+      "vicinity" : "822 Clay St<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-53a8c36aacda44d1bbb975d176fa10ba;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTEy?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-53a8c36aacda44d1bbb975d176fa10ba"
+    }, {
+      "position" : [ 37.79428, -122.40711 ],
+      "distance" : 11,
+      "title" : "Jian Min Health",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "food-drink",
+        "title" : "Food & Drink",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/food-drink?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/09.icon",
+      "vicinity" : "822 Clay St<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-8173dfabb57349fe89fe5a8e9b65e239;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTEz?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-8173dfabb57349fe89fe5a8e9b65e239"
+    }, {
+      "position" : [ 37.79438, -122.40706 ],
+      "distance" : 12,
+      "title" : "All Day Notary",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "business-services",
+        "title" : "Business & Services",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/business-services?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/02.icon",
+      "vicinity" : "111 Waverly Pl<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-7f0867f2e7b24347b6e21f2f6282659b;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTE0?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-7f0867f2e7b24347b6e21f2f6282659b",
+      "openingHours" : {
+        "text" : "Mon, Tue, Thu-Sun: 06:00 - 00:00<br/>Wed: 06:30 - 00:00",
+        "label" : "Opening hours",
+        "isOpen" : false,
+        "structured" : [ {
+          "start" : "T060000",
+          "duration" : "PT18H00M",
+          "recurrence" : "FREQ:DAILY;BYDAY:MO,TU,TH,FR,SA,SU"
+        }, {
+          "start" : "T063000",
+          "duration" : "PT17H30M",
+          "recurrence" : "FREQ:DAILY;BYDAY:WE"
+        } ]
+      }
+    }, {
+      "position" : [ 37.79438, -122.40706 ],
+      "distance" : 12,
+      "title" : "Culture Lite Printing",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "business-industry",
+        "title" : "Business/Industry",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/business-industry?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/02.icon",
+      "vicinity" : "111 Waverly Pl<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-bab83f742ee24770b11a08d95b63fbff;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTE1?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-bab83f742ee24770b11a08d95b63fbff"
+    }, {
+      "position" : [ 37.79439, -122.40707 ],
+      "distance" : 14,
+      "title" : "Mattos John Illustration",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "business-services",
+        "title" : "Business & Services",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/business-services?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/02.icon",
+      "vicinity" : "109 Waverly Pl<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8403fv6k-30d2555a651c03f684a66ef8cd3731a6;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTE2?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8403fv6k-30d2555a651c03f684a66ef8cd3731a6"
+    }, {
+      "position" : [ 37.79439, -122.40707 ],
+      "distance" : 14,
+      "title" : "Lees Waverly Location",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "theatre-music-culture",
+        "title" : "Theatre, Music & Culture",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/theatre-music-culture?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/05.icon",
+      "vicinity" : "109 Waverly Pl<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-01b5c507c9db49c3b8b747d95676cdec;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTE3?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-01b5c507c9db49c3b8b747d95676cdec"
+    }, {
+      "position" : [ 37.79439, -122.40707 ],
+      "distance" : 14,
+      "title" : "Yelaska Bruce Design",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "business-services",
+        "title" : "Business & Services",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/business-services?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/02.icon",
+      "vicinity" : "109 Waverly Pl<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-30591aa71b4747219be36a3093708964;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTE4?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-30591aa71b4747219be36a3093708964"
+    }, {
+      "position" : [ 37.79439, -122.40707 ],
+      "distance" : 14,
+      "title" : "Buddhist Association of America Norras Temple",
+      "averageRating" : 0.0,
+      "category" : {
+        "id" : "religious-place",
+        "title" : "Religious Place",
+        "href" : "https://places.cit.api.here.com/places/v1/categories/places/religious-place?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+        "type" : "urn:nlp-types:category",
+        "system" : "places"
+      },
+      "icon" : "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/39.icon",
+      "vicinity" : "109 Waverly Pl<br/>San Francisco, CA 94108",
+      "having" : [ ],
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/8409q8zn-915975f3ea904fa483aed2796314a6e2;context=Zmxvdy1pZD1lMjcyYmMzYy03MjQ0LTU1OGMtOWE3Mi01MzdmZDUxNTUzNDlfMTU1MjU2NjA3NzY5MF8yMDRfNTMwNCZyYW5rPTE5?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ",
+      "id" : "8409q8zn-915975f3ea904fa483aed2796314a6e2",
+      "alternativeNames" : [ {
+        "name" : "Buddhist Association of America",
+        "language" : "en"
+      }, {
+        "name" : "Norras Temple",
+        "language" : "en"
+      } ]
+    } ]
+  },
+  "search" : {
+    "context" : {
+      "location" : {
+        "position" : [ 37.79429, -122.40698 ],
+        "address" : {
+          "text" : "818 Clay St<br/>San Francisco, CA 94108<br/>USA",
+          "house" : "818",
+          "street" : "Clay St",
+          "postalCode" : "94108",
+          "district" : "Chinatown",
+          "city" : "San Francisco",
+          "county" : "San Francisco",
+          "stateCode" : "CA",
+          "country" : "United States",
+          "countryCode" : "USA"
+        }
+      },
+      "type" : "urn:nlp-types:place",
+      "href" : "https://places.cit.api.here.com/places/v1/places/loc-dmVyc2lvbj0xO3RpdGxlPTgxOCtDbGF5K1N0O2xhdD0zNy43OTQyOTtsb249LTEyMi40MDY5ODtzdHJlZXQ9Q2xheStTdDtob3VzZT04MTg7Y2l0eT1TYW4rRnJhbmNpc2NvO3Bvc3RhbENvZGU9OTQxMDg7Y291bnRyeT1VU0E7ZGlzdHJpY3Q9Q2hpbmF0b3duO3N0YXRlQ29kZT1DQTtjb3VudHk9U2FuK0ZyYW5jaXNjbztjYXRlZ29yeUlkPWJ1aWxkaW5nO3NvdXJjZVN5c3RlbT1pbnRlcm5hbA;context=c2VhcmNoQ29udGV4dD0x?app_id=ZNjg1bXCjPtHD9QdaLMY&app_code=ijJKLA1OuQu9Hwztkv9osQ"
+    }
+  }
+}

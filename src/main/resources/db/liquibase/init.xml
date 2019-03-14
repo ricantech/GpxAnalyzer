@@ -1,0 +1,48 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet author="michal.rican" id="1-create-path-table">
+        <createTable tableName="path">
+            <column name="id" type="int8">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="created" type="TIMESTAMP" />
+            <column name="start_node_id" type="int8" />
+            <column name="last_node_id" type="int8" />
+            <column name="total_distance" type="double" />
+            <column name="start_node_end_node_distance" type="double" />
+            <column name="average_speed" type="double" />
+        </createTable>
+        <createSequence sequenceName="path_seq" incrementBy="1"/>
+    </changeSet>
+
+    <changeSet author="michal.rican" id="2-create-node-table">
+        <createTable tableName="node">
+            <column name="id" type="int8">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="latitude" type="double" />
+            <column name="longitude" type="double" />
+            <column name="elevation" type="double" />
+            <column name="time_of_record_creation" type="TIMESTAMP" />
+            <column name="path_id" type="int8" />
+        </createTable>
+        <createSequence sequenceName="node_seq" incrementBy="100"/>
+    </changeSet>
+
+    <changeSet author="michal.rican" id="3-create-close-place-table">
+        <createTable tableName="close_place">
+            <column name="id" type="int8">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="distance" type="double" />
+            <column name="title" type="varchar(150)" />
+            <column name="category" type="varchar(50)" />
+            <column name="node_id" type="int8" />
+        </createTable>
+        <createSequence sequenceName="close_place_seq" incrementBy="50"/>
+    </changeSet>
+    
+</databaseChangeLog>

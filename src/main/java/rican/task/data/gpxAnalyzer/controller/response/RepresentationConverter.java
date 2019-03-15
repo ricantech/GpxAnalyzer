@@ -19,7 +19,7 @@ public class RepresentationConverter {
         pathWithDetailRepresentation.setLastNode(convertWithClosePlaces(path.getLastNode()));
         pathWithDetailRepresentation.setStartNodeEndNodeDistanceInMeters(path.getStartNodeEndNodeDistance());
         pathWithDetailRepresentation.setTotalDistanceInMeters(path.getTotalDistance());
-        pathWithDetailRepresentation.setAverageSpeedKmPerHour(path.getAverageSpeed());
+        pathWithDetailRepresentation.setAverageSpeedKmPerHour(path.getAverageSpeedKmPerHour());
         pathWithDetailRepresentation.setPathDetails(path.getNodes().stream().map(this::convert).collect(Collectors.toList()));
         pathWithDetailRepresentation.add(linkTo(PathController.class).slash(path.getId()).withSelfRel());
         return pathWithDetailRepresentation;

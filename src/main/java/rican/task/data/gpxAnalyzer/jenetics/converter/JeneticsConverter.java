@@ -65,7 +65,7 @@ public class JeneticsConverter implements DomainConverter {
 
         result.setTotalDistance(totalDistanceInMeters);
         result.setStartNodeEndNodeDistance(startEndDistanceInMeters);
-        result.setAverageSpeed(averageSpeedKmPerHours);
+        result.setAverageSpeedKmPerHour(averageSpeedKmPerHours);
         return result;
     }
 

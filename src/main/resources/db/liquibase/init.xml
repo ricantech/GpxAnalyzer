@@ -13,7 +13,7 @@
             <column name="last_node_id" type="int8" />
             <column name="total_distance" type="double" />
             <column name="start_node_end_node_distance" type="double" />
-            <column name="average_speed" type="double" />
+            <column name="average_speed_km_per_hour" type="double" />
         </createTable>
         <createSequence sequenceName="path_seq" incrementBy="1"/>
     </changeSet>

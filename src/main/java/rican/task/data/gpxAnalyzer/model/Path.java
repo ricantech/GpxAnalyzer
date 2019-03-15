@@ -39,8 +39,8 @@ public class Path {
     @Column(name = "start_node_end_node_distance")
     private Double startNodeEndNodeDistance;
 
-    @Column(name = "average_speed")
-    private Double averageSpeed;
+    @Column(name = "average_speed_km_per_hour")
+    private Double averageSpeedKmPerHour;
 
     public Long getId() {
         return id;
@@ -95,11 +95,11 @@ public class Path {
         this.startNodeEndNodeDistance = startNodeEndNodeDistance;
     }
 
-    public Double getAverageSpeed() {
-        return averageSpeed;
+    public Double getAverageSpeedKmPerHour() {
+        return averageSpeedKmPerHour;
     }
 
-    public void setAverageSpeed(Double averageSpeed) {
-        this.averageSpeed = averageSpeed;
+    public void setAverageSpeedKmPerHour(Double averageSpeedKmPerHour) {
+        this.averageSpeedKmPerHour = averageSpeedKmPerHour;
     }
 }

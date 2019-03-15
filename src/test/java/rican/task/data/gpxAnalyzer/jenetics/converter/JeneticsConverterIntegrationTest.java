@@ -47,7 +47,7 @@ public class JeneticsConverterIntegrationTest {
 
         assertThat(result.getTotalDistance(), is(1003.8342236200876));
         assertThat(result.getStartNodeEndNodeDistance(), is(1003.8342236200876));
-        assertThat(result.getAverageSpeed(), is(60.23005341720526));
+        assertThat(result.getAverageSpeedKmPerHour(), is(60.23005341720526));
         assertThat(result.getNodes().size(), is(2));
         assertNode(result.getNodes().get(0), 21, 60, 19.0, of(2015, 1, 20, 13, 30));
         assertNode(result.getNodes().get(1), 21, 60.009655, 19.0, of(2015, 1, 20, 13, 31));

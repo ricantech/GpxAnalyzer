@@ -51,7 +51,7 @@ public class JeneticsConverterTest {
 
         assertEquals(TOTAL_DISTANCE, result.getTotalDistance());
         assertEquals(START_TO_END_DISTANCE, result.getStartNodeEndNodeDistance());
-        assertEquals(AVERAGE_SPEED, result.getAverageSpeed());
+        assertEquals(AVERAGE_SPEED, result.getAverageSpeedKmPerHour());
         assertEquals(2, result.getNodes().size());
         assertNode(result.getNodes().get(0), 21.0, 60.0, 19.0, of(2015, 1, 20, 13, 30));
         assertNode(result.getNodes().get(1), 21.0, 60.009655, 19.0, of(2015, 1, 20, 13, 31));

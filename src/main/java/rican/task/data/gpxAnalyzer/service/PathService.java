@@ -1,10 +1,10 @@
-package rican.task.data.gpxAnalyzer.data;
+package rican.task.data.gpxAnalyzer.service;
 
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
-import rican.task.data.gpxAnalyzer.data.closeplaces.RestClient;
-import rican.task.data.gpxAnalyzer.data.converter.DomainConverter;
+import rican.task.data.gpxAnalyzer.service.closeplaces.RestClient;
+import rican.task.data.gpxAnalyzer.service.converter.DomainConverter;
 import rican.task.data.gpxAnalyzer.exception.PathNotFoundException;
 import rican.task.data.gpxAnalyzer.model.ClosePlace;
 import rican.task.data.gpxAnalyzer.model.Node;

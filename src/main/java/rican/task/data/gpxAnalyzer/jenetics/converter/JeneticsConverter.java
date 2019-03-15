@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
-import rican.task.data.gpxAnalyzer.data.converter.DomainConverter;
+import rican.task.data.gpxAnalyzer.service.converter.DomainConverter;
 import rican.task.data.gpxAnalyzer.exception.FileWithoutWaypointsException;
 import rican.task.data.gpxAnalyzer.exception.InputStreamNotReadableException;
 import rican.task.data.gpxAnalyzer.jenetics.calculator.GeodeticCalculator;

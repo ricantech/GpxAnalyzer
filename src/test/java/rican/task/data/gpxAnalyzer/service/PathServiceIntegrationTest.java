@@ -1,4 +1,4 @@
-package rican.task.data.gpxAnalyzer.data;
+package rican.task.data.gpxAnalyzer.service;
 
 import com.google.common.collect.Lists;
 import org.junit.Test;

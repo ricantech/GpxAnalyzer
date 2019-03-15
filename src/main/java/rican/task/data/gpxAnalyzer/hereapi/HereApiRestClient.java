@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestTemplate;
-import rican.task.data.gpxAnalyzer.data.closeplaces.RestClient;
+import rican.task.data.gpxAnalyzer.service.closeplaces.RestClient;
 import rican.task.data.gpxAnalyzer.hereapi.model.Place;
 import rican.task.data.gpxAnalyzer.hereapi.model.ResultResponse;
 import rican.task.data.gpxAnalyzer.model.ClosePlace;

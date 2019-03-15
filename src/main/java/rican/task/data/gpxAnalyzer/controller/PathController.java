@@ -14,7 +14,7 @@ import rican.task.data.gpxAnalyzer.controller.response.PathRepresentation;
 import rican.task.data.gpxAnalyzer.controller.response.PathWithDetailRepresentation;
 import rican.task.data.gpxAnalyzer.controller.response.RepresentationConverter;
 import rican.task.data.gpxAnalyzer.controller.validator.GpxFile;
-import rican.task.data.gpxAnalyzer.data.PathService;
+import rican.task.data.gpxAnalyzer.service.PathService;
 import rican.task.data.gpxAnalyzer.model.Path;
 
 import java.util.List;

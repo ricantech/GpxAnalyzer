@@ -1,4 +1,4 @@
-package rican.task.data.gpxAnalyzer.data.converter;
+package rican.task.data.gpxAnalyzer.service.converter;
 
 import org.springframework.web.multipart.MultipartFile;
 import rican.task.data.gpxAnalyzer.model.Path;

@@ -1,4 +1,4 @@
-package rican.task.data.gpxAnalyzer.data.closeplaces;
+package rican.task.data.gpxAnalyzer.service.closeplaces;
 
 import rican.task.data.gpxAnalyzer.model.ClosePlace;
 import rican.task.data.gpxAnalyzer.model.Node;

@@ -9,10 +9,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.multipart.MultipartFile;
-import rican.task.data.gpxAnalyzer.exception.FileWithoutWaypointsException;
-import rican.task.data.gpxAnalyzer.exception.InputStreamNotReadableException;
-import rican.task.data.gpxAnalyzer.model.Node;
-import rican.task.data.gpxAnalyzer.model.Path;
+import rican.task.data.gpxAnalyzer.domain.exception.FileWithoutWaypointsException;
+import rican.task.data.gpxAnalyzer.domain.exception.InputStreamNotReadableException;
+import rican.task.data.gpxAnalyzer.domain.model.Node;
+import rican.task.data.gpxAnalyzer.domain.model.Path;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -8,12 +8,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
-import rican.task.data.gpxAnalyzer.service.converter.DomainConverter;
-import rican.task.data.gpxAnalyzer.exception.FileWithoutWaypointsException;
-import rican.task.data.gpxAnalyzer.exception.InputStreamNotReadableException;
+import rican.task.data.gpxAnalyzer.domain.service.converter.DomainConverter;
+import rican.task.data.gpxAnalyzer.domain.exception.FileWithoutWaypointsException;
+import rican.task.data.gpxAnalyzer.domain.exception.InputStreamNotReadableException;
 import rican.task.data.gpxAnalyzer.jenetics.calculator.GeodeticCalculator;
-import rican.task.data.gpxAnalyzer.model.Node;
-import rican.task.data.gpxAnalyzer.model.Path;
+import rican.task.data.gpxAnalyzer.domain.model.Node;
+import rican.task.data.gpxAnalyzer.domain.model.Path;
 
 import java.io.IOException;
 import java.time.ZonedDateTime;

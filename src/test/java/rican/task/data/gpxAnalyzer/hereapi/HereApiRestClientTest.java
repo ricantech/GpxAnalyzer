@@ -3,6 +3,7 @@ package rican.task.data.gpxAnalyzer.hereapi;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestTemplate;
 import rican.task.data.gpxAnalyzer.hereapi.model.Place;
 import rican.task.data.gpxAnalyzer.hereapi.model.ResultResponse;
@@ -34,6 +35,15 @@ public class HereApiRestClientTest {
         properties.setUrl("http://test");
         restTemplate = mock(RestTemplate.class);
         client = new HereApiRestClient(restTemplate, properties);
+    }
+
+    @Test
+    public void shouldReturnEmptyListWhenApiIsNotReachable() {
+        when(restTemplate.getForEntity(any(String.class), eq(ResultResponse.class), anyMapOf(String.class, String.class))).thenThrow(ResourceAccessException.class);
+
+        List<ClosePlace> result = client.getClosePlaces(NODE);
+
+        assertTrue(result.isEmpty());
     }
 
     @Test

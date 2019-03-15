@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestTemplate;
 import rican.task.data.gpxAnalyzer.data.closeplaces.RestClient;
 import rican.task.data.gpxAnalyzer.hereapi.model.Place;
@@ -12,12 +13,12 @@ import rican.task.data.gpxAnalyzer.hereapi.model.ResultResponse;
 import rican.task.data.gpxAnalyzer.model.ClosePlace;
 import rican.task.data.gpxAnalyzer.model.Node;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.util.Collections.emptyList;
+import static java.util.Optional.empty;
+import static java.util.Optional.of;
 
 @Component
 public class HereApiRestClient implements RestClient {
@@ -43,13 +44,26 @@ public class HereApiRestClient implements RestClient {
         queryParams.put("lon", node.getLongitude().toString());
 
         log.info("Preparing to fetch close places for node {lat:{}, lon:{}}", node.getLatitude(), node.getLongitude());
-        ResponseEntity<ResultResponse> result = restTemplate.getForEntity(CLOSE_PLACE_RESOURCE, ResultResponse.class, queryParams);
-        log.info("Close places fetched status:{}", result.getStatusCode());
+        Optional<ResponseEntity<ResultResponse>> result = fetchClosePlaces(queryParams);
+        return result.map(this::convertToClosePlaces).orElseGet(Collections::emptyList);
+    }
 
+    private List<ClosePlace> convertToClosePlaces(ResponseEntity<ResultResponse> result) {
         if (result.getStatusCode().is2xxSuccessful() && result.getBody() != null) {
             return result.getBody().getItems().stream().map(HereApiRestClient::toClosePlace).collect(Collectors.toList());
         }
         return emptyList();
+    }
+
+    private Optional<ResponseEntity<ResultResponse>> fetchClosePlaces(Map<String, String> queryParams) {
+        try {
+            ResponseEntity<ResultResponse> result = restTemplate.getForEntity(CLOSE_PLACE_RESOURCE, ResultResponse.class, queryParams);
+            log.info("Close places fetched status:{}", result.getStatusCode());
+            return of(result);
+        } catch (ResourceAccessException accessException) {
+            log.error("HereAPI not accessible", accessException);
+            return empty();
+        }
     }
 
     private static ClosePlace toClosePlace(Place place) {

@@ -1,24 +1,26 @@
 package rican.task.data.gpxAnalyzer.hereapi;
 
+import com.google.common.collect.ImmutableList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.ResourceAccessException;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.ClientResponse;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
+import rican.task.data.gpxAnalyzer.domain.model.ClosePlace;
+import rican.task.data.gpxAnalyzer.domain.model.Node;
 import rican.task.data.gpxAnalyzer.domain.service.closeplaces.RestClient;
 import rican.task.data.gpxAnalyzer.hereapi.model.Place;
 import rican.task.data.gpxAnalyzer.hereapi.model.ResultResponse;
-import rican.task.data.gpxAnalyzer.domain.model.ClosePlace;
-import rican.task.data.gpxAnalyzer.domain.model.Node;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static java.util.Collections.emptyList;
 import static java.util.Optional.empty;
 import static java.util.Optional.of;
+import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
 
 @Component
 public class HereApiRestClient implements RestClient {
@@ -27,13 +29,13 @@ public class HereApiRestClient implements RestClient {
     private static final String API_VERSION = "v1";
     private static final String CLOSE_PLACE_RESOURCE = "/places/{version}/discover/here?app_id={appId}&app_code={appCode}&at={lat},{lon}&pretty";
 
-    private final RestTemplate restTemplate;
+    private final WebClient hereApiClient;
     private final HereApiProperties properties;
 
-    public HereApiRestClient(@Qualifier("hereApiRestTemplate") RestTemplate hereApiRestTemplate,
+    public HereApiRestClient(WebClient hereApiClient,
                              HereApiProperties properties) {
         this.properties = properties;
-        this.restTemplate = hereApiRestTemplate;
+        this.hereApiClient = hereApiClient;
     }
 
     @Override
@@ -44,26 +46,36 @@ public class HereApiRestClient implements RestClient {
         queryParams.put("lon", node.getLongitude().toString());
 
         log.info("Preparing to fetch close places for node {lat:{}, lon:{}}", node.getLatitude(), node.getLongitude());
-        Optional<ResponseEntity<ResultResponse>> result = fetchClosePlaces(queryParams);
+        Optional<Mono<ResultResponse>> result = fetchClosePlaces(queryParams);
         return result.map(this::convertToClosePlaces).orElseGet(Collections::emptyList);
     }
 
-    private List<ClosePlace> convertToClosePlaces(ResponseEntity<ResultResponse> result) {
-        if (result.getStatusCode().is2xxSuccessful() && result.getBody() != null) {
-            return result.getBody().getItems().stream().map(HereApiRestClient::toClosePlace).collect(Collectors.toList());
+    private List<ClosePlace> convertToClosePlaces(Mono<ResultResponse> result) {
+        ResultResponse hereApiResponse = result.block();
+        if (hereApiResponse == null) {
+            log.warn("No result retrieved for close places. Returning empty list!");
+            return ImmutableList.of();
         }
-        return emptyList();
+        return hereApiResponse.getItems().stream().map(HereApiRestClient::toClosePlace).collect(Collectors.toList());
     }
 
-    private Optional<ResponseEntity<ResultResponse>> fetchClosePlaces(Map<String, String> queryParams) {
+    private Optional<Mono<ResultResponse>> fetchClosePlaces(Map<String, String> queryParams) {
         try {
-            ResponseEntity<ResultResponse> result = restTemplate.getForEntity(CLOSE_PLACE_RESOURCE, ResultResponse.class, queryParams);
-            log.info("Close places fetched status:{}", result.getStatusCode());
+            Mono<ResultResponse> result = hereApiClient.get().uri(CLOSE_PLACE_RESOURCE, queryParams)
+                    .header("Accept", APPLICATION_JSON_UTF8_VALUE)
+                    .retrieve()
+                    .onStatus(HttpStatus::isError, this::logAndReturnEmptyResult)
+                    .bodyToMono(ResultResponse.class);
             return of(result);
         } catch (ResourceAccessException accessException) {
             log.error("HereAPI not accessible", accessException);
             return empty();
         }
+    }
+
+    private Mono logAndReturnEmptyResult(ClientResponse clientResponse) {
+        log.error("Error returned from hereAPI: {}", clientResponse);
+        return Mono.empty();
     }
 
     private static ClosePlace toClosePlace(Place place) {

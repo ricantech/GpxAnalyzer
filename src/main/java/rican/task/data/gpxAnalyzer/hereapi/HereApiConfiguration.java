@@ -1,15 +1,13 @@
 package rican.task.data.gpxAnalyzer.hereapi;
 
-import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.client.RestTemplate;
-import org.springframework.web.util.DefaultUriBuilderFactory;
+import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
 public class HereApiConfiguration {
     @Bean
-    public RestTemplate hereApiRestTemplate(RestTemplateBuilder builder, HereApiProperties properties) {
-        return builder.uriTemplateHandler(new DefaultUriBuilderFactory(properties.getUrl())).build();
+    public WebClient hereApiWebClient(WebClient.Builder builder, HereApiProperties properties) {
+        return builder.baseUrl(properties.getUrl()).build();
     }
 }

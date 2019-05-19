@@ -1,11 +1,13 @@
 package rican.task.data.gpxAnalyzer.util;
 
+import com.google.common.base.Charsets;
 import org.springframework.mock.web.MockMultipartFile;
+import org.synchronoss.cloud.nio.multipart.util.IOUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import static com.google.common.io.ByteStreams.toByteArray;
+import static com.google.common.base.Charsets.UTF_8;
 
 public class TestFileUtils {
 
@@ -14,9 +16,7 @@ public class TestFileUtils {
     private static final String EMPTY_FILE = "gpx/test_data_without_nodes.gpx";
     private static final String SUCCESS_RESPONSE = "hereapi/success.json";
 
-    private TestFileUtils() {
-
-    }
+    private TestFileUtils() { }
 
     public static MockMultipartFile createOkFile() {
         return createMultipartFile(OK_FILE);
@@ -30,14 +30,13 @@ public class TestFileUtils {
         return createMultipartFile(EMPTY_FILE);
     }
 
-    public static byte[] createSuccessHereApiResponse() {
+    public static String createSuccessHereApiResponse() {
         try {
-            return toByteArray(loadTestingFile(SUCCESS_RESPONSE));
+            return IOUtils.inputStreamAsString(loadTestingFile(SUCCESS_RESPONSE), UTF_8.displayName());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
-
 
     private static MockMultipartFile createMultipartFile(String name) {
         try {
